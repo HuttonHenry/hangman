@@ -6,3 +6,9 @@ print(word)
 
 guess = input("enter a single letter")
 
+if len(guess) == 1 and type(guess) == str:
+    print("Good guess!")
+else:
+    print("Oops!")
+
+
