@@ -6,7 +6,9 @@ word = random.choice(word_list)
 def ask_for_input():
     while True:
         guess = input("Guess a letter: ").lower()
-        if guess.isalpha() and len(guess) == 1:
+        if guess.isalpha() and len(guess) == 1:  
+            break
+        else:          
             print("Invalid letter. Please, enter a single alphabetical character.")
         return guess
 
