@@ -28,6 +28,5 @@ class Hangman:
             else:
                 self.check_guess(guess)
                 break
-    pass
 
 Hangman.ask_for_input()
