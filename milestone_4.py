@@ -4,12 +4,12 @@ class Hangman:
     word_list=['oranges','melon','banana','apples','cherries']
 
     def __init__(self):
-        self.num_lives = 5
-        self.word = random.choice(self.word_list)
-        self.wordguessed = ["_"] * len(self.word)
-        self.unique_letters = set(self.word)
-        self.num_letters = 0
-        self.list_of_guesses = []
+        num_lives = 5
+        word = random.choice(self.word_list)
+        wordguessed = ["_"] * len(self.word)
+        unique_letters = set(self.word)
+        num_letters = 0
+        list_of_guesses = []
 
     def ask_for_input(self):
         while True:
