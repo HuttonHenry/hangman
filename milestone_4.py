@@ -12,17 +12,21 @@ class Hangman:
         self.word_list = word_list
         self.list_of_guesses = []
 
+    def check_guess(self,guess):
+        guess = guess.lower()
+        if guess in self.word:
+            print("Good guess! ", guess, " is in the word.")
+
+
     def ask_for_input(self):
         while True:
             guess = input("Guess a letter: ").lower()
             if guess.isalpha() and len(guess) == 1:
                 break
-            print("Invalid letter. Please, enter a single alphabetical character.")
-
-        if guess in self.word:
-            print("Good guess! ", guess, " is in the word.")
-        else:
-            print("Sorry, ", guess, " is NOT in the word.")
+                print("Invalid letter. Please, enter a single alphabetical character.")
+            elif guess in self.list_of_guesses:
+                print("You already tried that letter!")
+            else:
+                self.check_guess(guess)
     pass
 
-myguess = Hangman().ask_for_input()
