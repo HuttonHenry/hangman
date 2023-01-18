@@ -4,7 +4,7 @@ class Hangman:
     word_list=['oranges','melon','banana','apples','cherries']
 
     def __init__(self,word_list,num_lives=5,):
-        self.word = random.choice(self.word_list)
+        self.word = random.choice(word_list)
         self.wordguessed = ["_"] * len(self.word)
         self.unique_letters = set(self.word)
         self.num_letters = 0
