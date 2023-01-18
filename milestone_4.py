@@ -29,3 +29,4 @@ class Hangman:
                 self.check_guess(guess)
     pass
 
+Hangman.ask_for_input()
