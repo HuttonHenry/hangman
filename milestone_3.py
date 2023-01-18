@@ -10,13 +10,12 @@ def ask_for_input():
             print("Invalid letter. Please, enter a single alphabetical character.")
         return guess
 
-def check_guess(guess2):
-    print(guess2)
+def check_guess(guess):
     print(word)
-    if guess2 in word:
-        print("Good guess! ", guess2, " is in the word.")
+    if guess in word:
+        print("Good guess! ", guess, " is in the word.")
     else:
-        print("Sorry, ", guess2, " is NOT in the word.")
+        print("Sorry, ", guess, " is NOT in the word.")
 
 myguess = ask_for_input()
 check_guess(myguess)
