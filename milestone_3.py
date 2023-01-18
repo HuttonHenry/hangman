@@ -15,7 +15,7 @@ def check_guess(guess2):
     print(word)
     if guess2 in word:
         print("Good guess! ", guess2, " is in the word.")
-     T3else:
+    else:
         print("Sorry, ", guess2, " is NOT in the word.")
 
 myguess = ask_for_input()
