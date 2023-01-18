@@ -3,12 +3,15 @@ import random
 class Hangman:
     word_list=['oranges','melon','banana','apples','cherries']
 
-    def __init__(self,word_list,num_lives=5,):
+    def __init__(self,word_list,num_lives=5):
         self.word = random.choice(word_list)
         self.wordguessed = ["_"] * len(self.word)
         self.unique_letters = set(self.word)
         self.num_letters = 0
+        self.num_lives = num_lives
+        self.word_list = word_list
         self.list_of_guesses = []
+
 
     def ask_for_input(self):
         while True:
