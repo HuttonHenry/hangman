@@ -27,6 +27,7 @@ class Hangman:
                 print("You already tried that letter!")
             else:
                 self.check_guess(guess)
+                break
     pass
 
 Hangman.ask_for_input()
